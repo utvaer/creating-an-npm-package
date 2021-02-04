@@ -1,7 +1,7 @@
 // if no selector argument is passed in, use a default selector
 export default function SillyInputs(selector = ".silly-input") {
 	// get all the inputs
-	const inputs = document.querySelectorAll(selector);
+	const inputs = document.querySelectorAll(`input${selector}`);
 
 	// loop through all the inputs
 	inputs.forEach((input) => {
