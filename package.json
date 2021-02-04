@@ -1,0 +1,20 @@
+{
+  "name": "silly-inputs",
+  "version": "1.0.0",
+  "description": "The world's greatest text inputs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoroffFEU/creating-an-npm-package.git"
+  },
+  "keywords": [],
+  "author": "Noroff FEU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoroffFEU/creating-an-npm-package/issues"
+  },
+  "homepage": "https://github.com/NoroffFEU/creating-an-npm-package#readme"
+}
