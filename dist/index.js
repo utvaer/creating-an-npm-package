@@ -1,10 +1,18 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = SillyInput;
 // if no selector argument is passed in, use a default selector
-export default function SillyInput(selector = ".silly-input") {
+function SillyInput() {
+	var selector = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ".silly-input";
+
 	// get all the inputs
-	const inputs = document.querySelectorAll(`input${selector}`);
+	var inputs = document.querySelectorAll("input" + selector);
 
 	// loop through all the inputs
-	inputs.forEach((input) => {
+	inputs.forEach(function (input) {
 		// style the input
 		styleInput(input);
 		// add a keyup listener to the input
@@ -13,7 +21,7 @@ export default function SillyInput(selector = ".silly-input") {
 
 	// this function called on the keyup event
 	function changeColour() {
-		this.style.backgroundColor = `#${generateColour()}`;
+		this.style.backgroundColor = "#" + generateColour();
 	}
 
 	// style the input
@@ -23,7 +31,7 @@ export default function SillyInput(selector = ".silly-input") {
 		input.style.color = "white";
 		input.style.width = "100%";
 		input.style.fontSize = "1rem";
-		input.style.backgroundColor = `#${generateColour()}`;
+		input.style.backgroundColor = "#" + generateColour();
 	}
 
 	// https://css-tricks.com/snippets/javascript/random-hex-color/
